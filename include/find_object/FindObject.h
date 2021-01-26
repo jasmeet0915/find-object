@@ -72,7 +72,7 @@ public:
 	bool saveVocabulary(const QString & filePath) const;
 	bool loadVocabulary(const QString & filePath);
 
-	int loadObjects(const QString & dirPath, bool recursive = false); // call updateObjects()
+	int loadObjects(const QString & dirPath, bool recursive = true); // call updateObjects()
 	const ObjSignature * addObject(const QString & filePath);
 	const ObjSignature * addObject(const cv::Mat & image, int id=0, const QString & filePath = QString());
 	bool addObject(ObjSignature * obj); // take ownership when true is returned
